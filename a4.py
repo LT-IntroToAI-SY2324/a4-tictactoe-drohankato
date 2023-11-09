@@ -1,3 +1,5 @@
+
+
 # NOTE: Until you fill in the TTTBoard class mypy is going to give you multiple errors
 # talking about unimplemented class attributes, don't worry about this as you're working
 
@@ -57,9 +59,7 @@ def play_tic_tac_toe() -> None:
 
 
 if __name__ == "__main__":
-    # here are some tests. These are not at all exhaustive tests. You will DEFINITELY
-    # need to write some more tests to make sure that your TTTBoard class is behaving
-    # properly.
+
     brd = TTTBoard()
     brd.make_move("X", 8)
     brd.make_move("O", 7)
@@ -86,7 +86,9 @@ if __name__ == "__main__":
     assert brd.has_won("O") == True
     assert brd.game_over() == True
 
+
+
     print("All tests passed!")
 
-    # uncomment to play!
-    # play_tic_tac_toe()
+
+    play_tic_tac_toe()
